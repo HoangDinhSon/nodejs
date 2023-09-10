@@ -10,7 +10,7 @@ app.set('view engine', 'hbs');
 app.set("views", path.join(__dirname, "./resource/views"))
 
 /* http logger */
-app.use(morgan("combined"))
+app.use(morgan("combined"))//partials
 
 
 
