@@ -1,0 +1,29 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "learn node js ",
+  "main": "main.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon --inspect server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HoangDinhSon/nodejs.git"
+  },
+  "keywords": [
+    "node",
+    "javascript",
+    "html"
+  ],
+  "author": "son",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HoangDinhSon/nodejs/issues"
+  },
+  "homepage": "https://github.com/HoangDinhSon/nodejs#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1"
+  }
+}
