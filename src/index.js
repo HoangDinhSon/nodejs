@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, "public"))) //http://localhost:3000/
 
 
 /* http logger */
-app.use(morgan("combined"))//partials
+//app.use(morgan("combined"))//partials
 
 
 
@@ -23,6 +23,10 @@ app.get('/', (req, res) => {
 })
 app.get('/news', (req, res) => {
     res.render(`news`)
+})
+app.get('/search', (req, res) => {
+    console.log(req.query);
+    res.render(`search`)
 })
 
 app.listen(port, () => {
