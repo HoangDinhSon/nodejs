@@ -8,6 +8,9 @@ const port = 3000
 app.engine('hbs', engine({ extname: '.hbs' }));
 app.set('view engine', 'hbs');
 app.set("views", path.join(__dirname, "./resource/views"))
+/* config asset link static */
+app.use(express.static(path.join(__dirname, "public"))) //http://localhost:3000/img/logo.png
+
 
 /* http logger */
 app.use(morgan("combined"))//partials
